@@ -312,18 +312,18 @@ function getPlugins(
     bundleType === UMD_DEV ||
     bundleType === UMD_PROD ||
     bundleType === UMD_PROFILING;
-  const isFBWWWBundle =
-    bundleType === FB_WWW_DEV ||
-    bundleType === FB_WWW_PROD ||
-    bundleType === FB_WWW_PROFILING;
-  const isRNBundle =
-    bundleType === RN_OSS_DEV ||
-    bundleType === RN_OSS_PROD ||
-    bundleType === RN_OSS_PROFILING ||
-    bundleType === RN_FB_DEV ||
-    bundleType === RN_FB_PROD ||
-    bundleType === RN_FB_PROFILING;
-  const shouldStayReadable = isFBWWWBundle || isRNBundle || forcePrettyOutput;
+  // const isFBWWWBundle =
+  //   bundleType === FB_WWW_DEV ||
+  //   bundleType === FB_WWW_PROD ||
+  //   bundleType === FB_WWW_PROFILING;
+  // const isRNBundle =
+  //   bundleType === RN_OSS_DEV ||
+  //   bundleType === RN_OSS_PROD ||
+  //   bundleType === RN_OSS_PROFILING ||
+  //   bundleType === RN_FB_DEV ||
+  //   bundleType === RN_FB_PROD ||
+  //   bundleType === RN_FB_PROFILING;
+  // const shouldStayReadable = isFBWWWBundle || isRNBundle || forcePrettyOutput;
   return [
     {
       name: 'rollup-plugin-flow-remove-types',
